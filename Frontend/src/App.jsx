@@ -7,8 +7,7 @@ import EditForm from './components/EditForm'
 import useLocalStorage from './hooks/useLocalStorage'
 
 function App() {
-  const [tasks, setTasks] = useLocalStorage
-  ('react-todo.task', [])
+  const [tasks, setTasks] = useLocalStorage('react-todo.task', [])
   const [editedTask, setEditedTasks] = useState(null)
   const [isEditing, setIsEditing] = useState(false)
   const [focusEl, setFocusEl] = useState()
